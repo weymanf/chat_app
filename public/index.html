@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://localhost:8888/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/chat.js"></script>
+	<script type="text/javascript" src="javascripts/chat_ui.js"></script>
+</head>
+<body>
+	<h1> weyman the best</h1>
+	<h3>Le Chat</h3>
+	<div id="chat"></div>
+
+	<div id="container">
+
+		<form id="weyman">
+			<label>message
+				<input type="text" id="weyminput">
+			</label>
+
+			<p><input type="submit" value="submit to my rule"></p>
+		</form>
+
+		<div id="user-list"><ul id="users"></ul></div>
+	</div>
+
+</body>
+</html>
+
+
+
+<style>
+#container {
+	float: left;
+}
+
+#chat {
+	float: left;
+	border: 1px solid blue;
+	min-width: 40%;
+	height: 200px;
+	overflow:scroll;
+}
+
+#user-list {
+	float: left;
+	border: 1px solid magenta;
+}
+
+#weyman {
+	float: left;
+	border: 1px dashed red;
+}
+
+</style>
